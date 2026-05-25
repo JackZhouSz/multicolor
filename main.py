@@ -92,7 +92,6 @@ def process(settings_fn):
                                           number_of_depth_layers = settings['target']['number of depth layers'],
                                           learning_rate = settings["general"]["learning rate"], 
                                           scheduler_power = settings["general"]["scheduler power"],
-                                          double_phase = settings["general"]["double phase constrain"],
                                           method = settings["general"]["method"],
                                           channel_power_filename = settings["target"]["channel power filename"],
                                           device = device,
