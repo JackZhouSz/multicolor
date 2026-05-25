@@ -7,9 +7,14 @@
                                  "output directory"        : "~/output/multi_color/jasper/",
                                  "learning rate"           : 5e-2,
 				 "scheduler power"         : 1,
-                                 "loss weights"            : [1.0, 0.05, 0.0, 0.05],
-                                 "double phase constrain"  : 1,
-                                 "method"                  : "multi-color",
+                                  "loss weights"            : {
+					           "image" : 1.0, 
+					           "light" : 0.2,
+					           "eyebox" : 0.0,
+					           "phase" : 0.0
+					          },
+                                 "double phase constrain"  : 0,
+                                 "method"                  : "conventional",
                                  "reduction"               : "mean"
                                 },
 
@@ -20,10 +25,10 @@
                                  "channel power filename"  : "",
                                  "number of frames"        : 3,
                                  "color depth"             : 8,
-                                 "peak amplitude"          : 1.4,
+                                 "peak amplitude"          : 1.0,
                                  "number of depth layers"  : 3,
                                  "volume depth"            : 5e-3,
-                                 "location offset"         : 0.0,
+                                 "location offset"         : 0.2,
                                  "defocus blur size"       : 20,
                                  "blur ratio"              : 3,
                                  "scheme"                  : "defocus",
@@ -31,7 +36,7 @@
                                  "optimize peak amplitude" : 0,
                                  "eyebox"                  : {
                                                               "offset"   : [0.0, 0.0],
-                                                              "diameter" : 1800
+                                                              "diameter" : 1500
                                                              }, 
                                  "img loss threshold"      : 1.0e-2,
                                  "vaccination"             : {
