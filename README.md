@@ -62,12 +62,12 @@ python3 main.py
 
 
 ### (2) Reconfiguring the code for your needs
-Please consult the settings file found in `settings/jasper.json`, which contains self-descriptive variables that you can modify.
+Please consult the settings file found in `settings/jasper_multi_color.json`, which contains self-descriptive variables that you can modify.
 
 If you want to use a different settings file:
 
 ```shell
-python3 main.py --settings settings/jasper.json
+python3 main.py --settings settings/jasper_multi_color.json
 ```
 
 If you are looking into finding more sample images, consider visiting our [images repository](https://github.com/complight/images).
