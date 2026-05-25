@@ -7,8 +7,8 @@
         "scheduler power": 1,
         "loss weights": {
             "image": 1.0,
-            "light": 0.0,
-            "eyebox": 0.05,
+            "light": 0.05,
+            "eyebox": 0.0,
             "phase": 0.0
         },
         "double phase constrain": 0,
