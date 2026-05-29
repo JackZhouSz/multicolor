@@ -24,7 +24,7 @@
         "peak amplitude": 1.0,
         "number of depth layers": 3,
         "volume depth": 0.06,
-        "location offset": 0.0,
+        "location offset": 0.05,
         "defocus blur size": 20,
         "blur ratio": 3,
         "scheme": "defocus",
@@ -40,7 +40,7 @@
                 0.0,
                 0.0
             ],
-            "diameter": 1080
+            "diameter": 960
         },
         "img loss threshold": 0.01,
         "vaccination": {
