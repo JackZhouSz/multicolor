@@ -1,0 +1,70 @@
+{
+    "general": {
+        "device": "cuda",
+        "iterations": 1000,
+        "output directory": "~/output/jasper",
+        "learning rate": 0.05,
+        "scheduler power": 1,
+        "loss weights": {
+            "image": 1.0,
+            "light": 0.0,
+            "eyebox": 0.0,
+            "phase": 0.05
+        },
+        "double phase constrain": 1,
+        "method": "conventional",
+        "reduction": "mean"
+    },
+    "target": {
+        "image filename": "~/manuscripts/manuscript_sinclets/source/source_images/512_512/painter_girl.png",
+        "depth filename": "./input/hd/holographic_glasses_depth.png",
+        "channel power filename": "",
+        "number of frames": 3,
+        "color depth": 8,
+        "peak amplitude": 1.0,
+        "number of depth layers": 1,
+        "volume depth": 0.06,
+        "location offset": 0.05,
+        "defocus blur size": 20,
+        "blur ratio": 3,
+        "scheme": "defocus",
+        "weights": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+        ],
+        "optimize peak amplitude": 0,
+        "eyebox": {
+            "offset": [
+                0.0,
+                0.0
+            ],
+            "diameter": 960
+        },
+        "img loss threshold": 0.01,
+        "vaccination": {
+            "state": 0.0,
+            "scale": 0.0001
+        }
+    },
+    "spatial light modulator": {
+        "model": "Jasper Display Educational Kit 4k",
+        "pixel pitch": 8e-06,
+        "resolution": [
+            1080,
+            1920
+        ]
+    },
+    "beam": {
+        "wavelengths": [
+            6.39e-07,
+            5.15e-07,
+            4.73e-07
+        ],
+        "beam profile": "",
+        "save at every": 100,
+        "propagation type": "Bandlimited Angular Spectrum",
+        "propagator type": "forward"
+    }
+}
