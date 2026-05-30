@@ -52,16 +52,12 @@ def process(settings_fn):
                                               ).to(device)
     if len(target_depth.shape) > 2:
         target_depth = torch.mean(target_depth, dim = 0)
-    # Zero-pad target_image if smaller than resolution (channel by channel for centering)
+    # Zero-pad target_image if smaller than resolution
     if target_image.shape[1] < resolution[0] or target_image.shape[2] < resolution[1]:
-        target_image_padded = []
-        for c in range(target_image.shape[0]):
-            padded_channel = odak.learn.tools.zero_pad(
-                target_image[c],
-                [resolution[0], resolution[1]]
-            )
-            target_image_padded.append(padded_channel)
-        target_image = torch.stack(target_image_padded, dim=0)
+        target_image = odak.learn.tools.zero_pad(
+            target_image,
+            [3, resolution[0], resolution[1]]
+        )
     else:
         target_image = target_image[:, 0:resolution[0], 0:resolution[1]]
     # Zero-pad target_depth if smaller than resolution
