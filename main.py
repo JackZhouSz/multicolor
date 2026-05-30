@@ -56,7 +56,7 @@ def process(settings_fn):
     if target_image.shape[1] < resolution[0] or target_image.shape[2] < resolution[1]:
         target_image = odak.learn.tools.zero_pad(
             target_image,
-            [3, resolution[0], resolution[1]]
+            [resolution[0], resolution[1]]
         )
     else:
         target_image = target_image[:, 0:resolution[0], 0:resolution[1]]
