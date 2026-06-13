@@ -9,7 +9,7 @@
             "image": 1.0,
             "light": 0.0,
             "eyebox": 0.0,
-            "phase": 0.05
+            "phase": 0.06
         },
         "double phase constrain": 1,
         "method": "conventional",
@@ -24,7 +24,7 @@
         "peak amplitude": 1.0,
         "number of depth layers": 3,
         "volume depth": 0.06,
-        "location offset": 0.05,
+        "location offset": 0.0,
         "defocus blur size": 20,
         "blur ratio": 3,
         "scheme": "defocus",

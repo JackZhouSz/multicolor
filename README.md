@@ -67,7 +67,7 @@ Please consult the settings file found in `settings/jasper_multi_color.json`, wh
 If you want to use a different settings file:
 
 ```shell
-python3 main.py --settings settings/jasper_multi_color.json
+python3 main.py --settings settings/holoeye_conventional.json
 ```
 
 If you are looking into finding more sample images, consider visiting our [images repository](https://github.com/complight/images).

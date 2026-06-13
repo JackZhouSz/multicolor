@@ -9,7 +9,7 @@
             "image": 1.0,
             "light": 0.2,
             "eyebox": 0.0,
-            "phase": 0.0
+            "phase": 0.06
         },
         "double phase constrain": 1,
         "method": "multi-color",

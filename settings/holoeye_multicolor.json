@@ -7,9 +7,9 @@
         "scheduler power": 1,
         "loss weights": {
             "image": 1.0,
-            "light": 0.05,
+            "light": 0.02,
             "eyebox": 0.0,
-            "phase": 0.0
+            "phase": 0.06
         },
         "double phase constrain": 0,
         "method": "multi-color",
@@ -23,8 +23,8 @@
         "color depth": 8,
         "peak amplitude": 1.3,
         "number of depth layers": 3,
-        "volume depth": 0.03,
-        "location offset": 0.02,
+        "volume depth": 0.05,
+        "location offset": 0.00,
         "defocus blur size": 20,
         "blur ratio": 3,
         "scheme": "defocus",
