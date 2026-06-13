@@ -21,10 +21,15 @@ def main():
                         type = str,
                         help = 'Path to the input image file.'
                        )
+    parser.add_argument(
+                        '--depth',
+                        type = str,
+                        help = 'Path to the depth map file.'
+                       )
     args = parser.parse_args()
     if type(args.settings) != type(None):
         settings_filename = str(args.settings.name)
-    process(settings_fn = settings_filename, input_image = args.input)
+    process(settings_fn = settings_filename, input_image = args.input, depth_image = args.depth)
 
 
 def compansate_illumination(settings, target_image, device):
@@ -41,10 +46,12 @@ def compansate_illumination(settings, target_image, device):
     return target_image
 
 
-def process(settings_fn, input_image=None):
+def process(settings_fn, input_image=None, depth_image=None):
     settings = odak.tools.load_dictionary(settings_fn)
     if input_image:
         settings["target"]["image filename"] = input_image
+    if depth_image:
+        settings["target"]["depth filename"] = depth_image
     device = torch.device(settings['general']['device'])
     resolution = settings['spatial light modulator']['resolution']
     target_image = odak.learn.tools.load_image(
