@@ -1,1 +1,4 @@
 odak==0.2.7
+ruff
+black
+flake8
