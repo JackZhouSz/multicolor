@@ -1,10 +1,10 @@
 {
     "general": {
         "device": "cuda",
-        "iterations": 1000,
+        "iterations": 2000,
         "output directory": "~/output/multi_color/jasper/",
-        "learning rate": 0.05,
-        "scheduler power": 1,
+        "learning rate": 5e-2,
+        "minimum learning rate": 5e-4,
         "loss weights": {
             "image": 1.0,
             "light": 0.2,

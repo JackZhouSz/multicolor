@@ -113,7 +113,7 @@ def process(settings_fn, input_image=None, depth_image=None):
         number_of_frames=settings["target"]["number of frames"],
         number_of_depth_layers=settings["target"]["number of depth layers"],
         learning_rate=settings["general"]["learning rate"],
-        scheduler_power=settings["general"]["scheduler power"],
+        min_learning_rate=settings["general"]["minimum learning rate"],
         double_phase=settings["general"]["double phase constrain"],
         method=settings["general"]["method"],
         channel_power_filename=settings["target"]["channel power filename"],

@@ -1,15 +1,15 @@
 {
     "general": {
         "device": "cuda",
-        "iterations": 1000,
+        "iterations": 2000,
         "output directory": "~/output/multi_color/jasper/",
-        "learning rate": 0.05,
-        "scheduler power": 1,
+        "learning rate": 5e-2,
+        "minimum learning rate": 5e-4,
         "loss weights": {
             "image": 1.0,
             "light": 0.0,
             "eyebox": 0.0,
-            "phase": 0.0
+            "phase": 0.04
         },
         "double phase constrain": 1,
         "method": "conventional",
@@ -24,7 +24,7 @@
         "peak amplitude": 1.0,
         "number of depth layers": 3,
         "volume depth": 0.005,
-        "location offset": 0.2,
+        "location offset": 0.0,
         "defocus blur size": 20,
         "blur ratio": 3,
         "scheme": "defocus",
